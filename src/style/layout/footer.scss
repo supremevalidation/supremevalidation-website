@@ -1,0 +1,44 @@
+footer {
+    position: relative;
+    padding: 100px 0px;
+    background-color: $azureradiance;
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        opacity: 0.2;
+        width: 380px;
+        height: 140px;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        path {
+            fill: $white;
+        }
+    }
+
+    strong {
+        color: $white;
+        font-weight: 400;
+        font-size: 12px;
+
+        a {
+            color: $white;
+            opacity: 0.7;
+            transition-duration: 0.5s;
+            transition-property: opacity;
+
+            &:hover {
+                color: $white;
+                opacity: 1;
+            }
+        }
+    }
+
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

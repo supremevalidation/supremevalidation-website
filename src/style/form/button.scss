@@ -15,7 +15,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition-duration: 0.5s;
-    transition-property: background-color;
+    transition-property: background-color, color;
 
     i {
         font-size: 23px;
@@ -32,6 +32,18 @@ button {
 
         &:hover {
             background-color: $pastelgreen;
+        }
+    }
+
+    &.white {
+        background-color: $white;
+        color: $azureradiance;
+        border: 1px solid transparent;
+
+        &:hover {
+            background-color: $azureradiance;
+            color: $white;
+            border: 1px solid $white;
         }
     }
 

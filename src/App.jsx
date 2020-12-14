@@ -1,29 +1,30 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Container } from 'react-bootstrap';
-import { IntlProvider } from 'react-intl';
-import { useSelector } from 'react-redux'
+import { Route, Switch, HashRouter } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import { IntlProvider } from "react-intl";
+import { useSelector } from "react-redux"
 
 import Turkish from "./language/tr.json";
 import English from "./language/en.json";
 
-import Header from './components/layout/header'
+import Header from "./components/layout/header";
+import Footer from "./components/layout/footer";
 
-import Home from './pages/Home';
-import Installation from './pages/Installation';
-import Usage from './pages/Usage';
-import Options from './pages/Options';
-import Classes from './pages/Classes';
-import Attributes from './pages/Attributes';
-import Events from './pages/Events';
-import Browser from './pages/Browser';
-import Contact from './pages/Contact';
-import ErrorPage from './pages/ErrorPage';
+import Home from "./pages/Home";
+import Installation from "./pages/Installation";
+import Usage from "./pages/Usage";
+import Options from "./pages/Options";
+import Classes from "./pages/Classes";
+import Attributes from "./pages/Attributes";
+import Events from "./pages/Events";
+import Browser from "./pages/Browser";
+import Contact from "./pages/Contact";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
     const language = useSelector(state => state.language);
 
     return (
-        <Router>
+        <HashRouter>
             <IntlProvider locale={language} messages={language === 'EN' ? English : Turkish}>
                 <Header />
                 <Container>
@@ -40,8 +41,9 @@ function App() {
                         <Route component={ErrorPage} />
                     </Switch>
                 </Container>
+                <Footer />
             </IntlProvider>
-        </Router>
+        </HashRouter>
     );
 }
 
