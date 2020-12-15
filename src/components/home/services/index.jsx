@@ -6,7 +6,7 @@ const Services = props => {
     return (
         <div className="services-section">
             <Row>
-                <Col md={4}>
+                <Col md={6} lg={4}>
                     <ServicesItem
                         icon="rocket"
                         color="sunglo"
@@ -14,7 +14,7 @@ const Services = props => {
                         detail={<FormattedMessage id="home.services.rocket.detail" defaultMessage="High performance and quality code." />}
                     />
                 </Col>
-                <Col md={4}>
+                <Col md={6} lg={4}>
                     <ServicesItem
                         icon="cogs"
                         color="portage"
@@ -22,7 +22,7 @@ const Services = props => {
                         detail={<FormattedMessage id="home.services.cogs.detail" defaultMessage="Easy to use and understandable options." />}
                     />
                 </Col>
-                <Col md={4}>
+                <Col md={6} lg={4}>
                     <ServicesItem
                         icon="brush"
                         color="tanhide"
@@ -30,9 +30,7 @@ const Services = props => {
                         detail={<FormattedMessage id="home.services.brush.detail" defaultMessage="User friendly interface." />}
                     />
                 </Col>
-            </Row>
-            <Row>
-                <Col md={4}>
+                <Col md={6} lg={4}>
                     <ServicesItem
                         icon="open-source"
                         color="periwinkle"
@@ -40,7 +38,7 @@ const Services = props => {
                         detail={<FormattedMessage id="home.services.openSource.detail" defaultMessage="You can review my code and support me." />}
                     />
                 </Col>
-                <Col md={4}>
+                <Col md={6} lg={4}>
                     <ServicesItem
                         icon="book"
                         color="algaegreen"
@@ -48,7 +46,7 @@ const Services = props => {
                         detail={<FormattedMessage id="home.services.book.detail" defaultMessage="Descriptive and easy to read documentation." />}
                     />
                 </Col>
-                <Col md={4}>
+                <Col md={6} lg={4}>
                     <ServicesItem
                         icon="design"
                         color="chenin"

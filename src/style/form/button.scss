@@ -55,3 +55,15 @@ button {
         }
     }
 }
+
+@media screen and (max-width: $md) {
+    button {
+        padding: 8px 20px;
+        font-size: 13px;
+
+        &.large {
+            font-size: 14px;
+            padding: 12px 24px;
+        }
+    }
+}

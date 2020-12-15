@@ -43,3 +43,25 @@ p {
         font-size: 18px;
     }
 }
+
+@media screen and (max-width: $md) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 14px;
+    
+        &.large {
+            font-size: 16px;
+        }
+    }
+}

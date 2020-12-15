@@ -2,6 +2,7 @@
 
 .services-item {
     text-align: center;
+    margin-bottom: 100px;
 
     figure {
         margin-bottom: 20px;
@@ -39,5 +40,11 @@
         h4 {
             margin-bottom: 5px;
         }
+    }
+}
+
+@media screen and (max-width: $md) {
+    .services-item {
+        margin-bottom: 50px;
     }
 }

@@ -9,7 +9,7 @@ const Footer = props => {
         <footer>
             <Logo />
             <Container>
-                <div className="d-flex align-items-end justify-content-between">
+                <div className="d-flex align-items-center align-md-items-end justify-content-between flex-column flex-md-row">
                     <strong><a href={"https://yasinkalkan.com/"} target="blank">Yasin Burak Kalkan</a> © 2020</strong>
                     <Link to="/installation" className="logo">
                         <Button color="white" title={<FormattedMessage id="button.getstarted" defaultMessage="Get Started" />} />
