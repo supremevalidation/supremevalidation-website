@@ -1,5 +1,5 @@
 .detail-section {
-    min-height: 1000px;
+    min-height: 700px;
     margin-bottom: 300px;
 
     h1 {
@@ -12,5 +12,12 @@
 
     h3 {
         margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .detail-section {
+        margin-top: 150px;
+        min-height: auto;
+        margin-bottom: 150px;
     }
 }

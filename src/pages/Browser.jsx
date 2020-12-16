@@ -6,34 +6,32 @@ const Browser = props => {
     return (
         <Detail {...props}>
             <Row>
-                <Col md={4}>
+                <Col md={6} lg={4}>
                     <div className="browser-card">
                         <Explorer />
                     </div>
                 </Col>
-                <Col md={4}>
+                <Col md={6} lg={4}>
                     <div className="browser-card">
                         <Edge />
                     </div>
                 </Col>
-                <Col md={4}>
+                <Col md={6} lg={4}>
                     <div className="browser-card">
                         <Firefox />
                     </div>
                 </Col>
-            </Row>
-            <Row>
-                <Col md={4}>
+                <Col md={6} lg={4}>
                     <div className="browser-card">
                         <Opera />
                     </div>
                 </Col>
-                <Col md={4}>
+                <Col md={6} lg={4}>
                     <div className="browser-card">
                         <Safari />
                     </div>
                 </Col>
-                <Col md={4}>
+                <Col md={6} lg={4}>
                     <div className="browser-card">
                         <Chrome />
                     </div>
