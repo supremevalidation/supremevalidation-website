@@ -58,5 +58,7 @@
     "sidebar.support.contact.detail": "Soru ve sorunlarınız için mail gönderebilirsiniz. Geri bildiriminizi her zaman bekliyorum. Lütfen projemi daha iyi geliştirmek için bana yardım edin. Bana e-postayla hızlıca ulaşabilirsiniz.",
 
     "button.getstarted": "Başla",
-    "copied.info": "Metin panoya kopyalandı."
+    "button.home": "Ana Sayfa",
+    "copied.info": "Metin panoya kopyalandı.",
+    "404.message": "Sayfa bulunamadı."
 }

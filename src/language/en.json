@@ -58,5 +58,7 @@
     "sidebar.support.contact.detail": "You can send mail for questions and problems. I am waiting every time your feedback. Please help me for better development my project. You can fast reach me in email.",
 
     "button.getstarted": "Get Started",
-    "copied.info": "Copied text to clipboard."
+    "button.home": "Home",
+    "copied.info": "Copied text to clipboard.",
+    "404.message": "Page not found."
 }
