@@ -2,9 +2,9 @@ import { HEADER_VISIBILITY_CHANGE, FOOTER_VISIBILITY_CHANGE } from '../../action
 import { store } from '../..'
 
 export const changeHeaderVisibility = visibility => {
-    store.dispatch({ type: HEADER_VISIBILITY_CHANGE, visibility: visibility })
+    store.dispatch({ type: HEADER_VISIBILITY_CHANGE, showHeader: visibility })
 }
 
 export const changeFooterVisibility = visibility => {
-    store.dispatch({ type: FOOTER_VISIBILITY_CHANGE, visibility: visibility })
+    store.dispatch({ type: FOOTER_VISIBILITY_CHANGE, showFooter: visibility })
 }

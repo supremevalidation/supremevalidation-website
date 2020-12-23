@@ -1,19 +1,16 @@
-import { TRFlag, USAFlag } from '../../svg'
-import { useSelector, useDispatch } from 'react-redux'
-import { LANGUAGE_CHANGE } from '../../../redux/actions-types'
+import { TRFlag, USAFlag } from "../../svg";
+import { useSelector } from "react-redux";
+import { languageAction } from "../../../redux/actions";
 
 const Language = () => {
     const language = useSelector(state => state.language)
-    const dispatch = useDispatch();
 
-    const onLanguageClick = () => {
-        dispatch({ type: LANGUAGE_CHANGE, language: language === 'EN' ? 'TR' : 'EN' })
-    }
+    const onLanguageClick = () => languageAction.changeLanguage(language === "EN" ? "TR" : "EN")
 
     return (
         <div className="language-button" onClick={onLanguageClick}>
             {
-                language === 'EN' ? <TRFlag /> : <USAFlag />
+                language === "EN" ? <TRFlag /> : <USAFlag />
             }
         </div>
     )

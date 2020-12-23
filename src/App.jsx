@@ -1,7 +1,7 @@
 import { Route, Switch, HashRouter } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { IntlProvider } from "react-intl";
-import { useSelector } from "react-redux"
+import { useSelector } from "react-redux";
 
 import Turkish from "./language/tr.json";
 import English from "./language/en.json";
@@ -22,14 +22,11 @@ import ErrorPage from "./pages/ErrorPage";
 
 function App() {
     const language = useSelector(state => state.language);
-    const visibility = useSelector(state => state.visibility);
-
-    console.log('visibility: ', visibility);
 
     return (
         <HashRouter>
             <IntlProvider locale={language} messages={language === 'EN' ? English : Turkish}>
-                {visibility.showHeader && <Header />}
+                <Header />
                 <Container>
                     <Switch>
                         <Route exact path="/" component={Home} />
@@ -44,7 +41,7 @@ function App() {
                         <Route component={ErrorPage} />
                     </Switch>
                 </Container>
-                {visibility.showFooter && <Footer />}
+                <Footer />
             </IntlProvider>
         </HashRouter>
     );
