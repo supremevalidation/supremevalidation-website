@@ -22,11 +22,12 @@ import ErrorPage from "./pages/ErrorPage";
 
 function App() {
     const language = useSelector(state => state.language);
+    const visibility = useSelector(state => state.visibility);
 
     return (
         <HashRouter>
             <IntlProvider locale={language} messages={language === 'EN' ? English : Turkish}>
-                <Header />
+                {visibility.showHeader && <Header />}
                 <Container>
                     <Switch>
                         <Route exact path="/" component={Home} />
@@ -41,7 +42,7 @@ function App() {
                         <Route component={ErrorPage} />
                     </Switch>
                 </Container>
-                <Footer />
+                {visibility.showFooter && <Footer />}
             </IntlProvider>
         </HashRouter>
     );

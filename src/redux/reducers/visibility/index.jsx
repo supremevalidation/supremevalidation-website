@@ -9,14 +9,16 @@ const alert = (state = initialState, action) => {
     switch (action.type) {
 
         case HEADER_VISIBILITY_CHANGE:
-            state.showHeader = action.showHeader;
 
-            return state;
+            return Object.assign({}, state, {
+                showHeader: action.showHeader
+            });
 
         case FOOTER_VISIBILITY_CHANGE:
-            state.showFooter = action.showFooter;
 
-            return state;
+            return Object.assign({}, state, {
+                showFooter: action.showFooter
+            });
 
         default:
             return state;

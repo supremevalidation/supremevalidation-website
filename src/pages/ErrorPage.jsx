@@ -10,7 +10,7 @@ const ErrorPage = props => {
             visibilityAction.changeHeaderVisibility(true);
             visibilityAction.changeFooterVisibility(true);
         }
-    })
+    }, [])
 
     return (
         <div>404</div>
