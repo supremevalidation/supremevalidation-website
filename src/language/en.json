@@ -47,6 +47,7 @@
     "sidebar.api.attributes.title": "Attributes",
     "sidebar.api.attributes.errorMessage.detail": "Custom error message after fail validation.",
     "sidebar.api.attributes.minCheck.detail": "Determines the minimum amount of options to be selected.",
+    "sidebar.api.attributes.min.detail": "Determines the minimum amount of text to be written.",
 
     "sidebar.api.events.title": "Events",
     "sidebar.api.events.onSuccess.detail": "This function will work after success form validation.",

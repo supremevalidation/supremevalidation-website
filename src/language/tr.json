@@ -47,6 +47,7 @@
     "sidebar.api.attributes.title": "Öznitellikler",
     "sidebar.api.attributes.errorMessage.detail": "Doğrulamadan sonra özel hata mesajı.",
     "sidebar.api.attributes.minCheck.detail": "Seçilecek minimum seçenek miktarını belirler.",
+    "sidebar.api.attributes.min.detail": "Yazılacak minimum metin miktarını belirler.",
     
     "sidebar.api.events.title": "Dinleyiciler",
     "sidebar.api.events.onSuccess.detail": "Bu fonksiyon, başarılı form doğrulamasından sonra çalışacaktır.",

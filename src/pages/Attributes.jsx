@@ -18,6 +18,13 @@ const Attributes = props => {
                     <FormattedMessage id="sidebar.api.attributes.minCheck.detail" defaultMessage="Determines the minimum amount of options to be selected." />
                 </p>
             </article>
+            <article className="detail-item">
+                <h4>min</h4>
+                <p className="feature"><strong><FormattedMessage id="sidebar.api.options.type" defaultMessage="Type" />:</strong> Number</p>
+                <p>
+                    <FormattedMessage id="sidebar.api.attributes.min.detail" defaultMessage="Determines the minimum amount of text to be written." />
+                </p>
+            </article>
         </Detail>
     )
 }
